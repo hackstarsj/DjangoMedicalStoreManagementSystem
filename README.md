@@ -1,0 +1,2 @@
+# DjangoMedicalStoreManagementSystem
+DjangoMedicalStoreManagementSystem Server Side
