@@ -114,7 +114,7 @@ class EmployeeBank(models.Model):
     bank_account_no=models.CharField(max_length=255)
     ifsc_no=models.CharField(max_length=255)
     employee_id=models.ForeignKey(Employee,on_delete=models.CASCADE)
-    added_on=models.DateTimeField()
+    added_on=models.DateTimeField(auto_now_add=True)
     objects=models.Manager()
 
 
