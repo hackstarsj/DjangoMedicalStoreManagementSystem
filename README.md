@@ -8,6 +8,5 @@ For Project Tutorial Please Follow Video : https://www.youtube.com/playlist?list
 
 <img src="https://github.com/hackstarsj/DjangoMedicalStoreManagementSystem/blob/master/screenshots/ER_DIAGRAM.png"/>
 
-##How Django and React Works?
-<br>
+## How Django and React Works.
 <img src="https://github.com/hackstarsj/DjangoMedicalStoreManagementSystem/blob/master/django-react.png"><br>
