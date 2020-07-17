@@ -7,3 +7,7 @@ For Project Tutorial Please Follow Video : https://www.youtube.com/playlist?list
 <h4>ER Diagram</h4>
 
 <img src="https://github.com/hackstarsj/DjangoMedicalStoreManagementSystem/blob/master/screenshots/ER_DIAGRAM.png"/>
+
+##How Django and React Works?
+<br>
+<img src="https://github.com/hackstarsj/DjangoMedicalStoreManagementSystem/blob/master/django-react.png"><br>
