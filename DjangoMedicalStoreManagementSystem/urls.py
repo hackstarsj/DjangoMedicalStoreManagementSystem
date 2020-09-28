@@ -26,6 +26,7 @@ router.register("company",views.CompanyViewSet,basename="company")
 router.register("companybank",views.CompanyBankViewset,basename="companybank")
 router.register("medicine",views.MedicineViewSet,basename="medicine")
 router.register("companyaccount",views.CompanyAccountViewset,basename="companyaccount")
+router.register("employee",views.EmployeeViewset,basename="employee")
 import os
 
 urlpatterns = [
