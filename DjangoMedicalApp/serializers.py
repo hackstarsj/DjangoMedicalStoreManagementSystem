@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from DjangoMedicalApp.models import Company, CompanyBank, Medicine, MedicalDetails, Employee, Customer, Bill, \
-    CustomerRequest, CompanyAccount, EmployeeBank
+    CustomerRequest, CompanyAccount, EmployeeBank, EmployeeSalary
 
 
 class CompanySerliazer(serializers.ModelSerializer):
@@ -95,4 +95,11 @@ class EmployeeBankSerializer(serializers.ModelSerializer):
         response = super().to_representation(instance)
         response['employee'] = EmployeeSerializer(instance.employee_id).data
         return response
+
+
+class EmployeeSalarySerializer(serializers.ModelSerializer):
+    class Meta:
+        model=EmployeeSalary
+        fields="__all__"
+
 

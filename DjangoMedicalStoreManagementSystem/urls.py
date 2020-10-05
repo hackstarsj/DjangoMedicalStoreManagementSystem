@@ -27,6 +27,9 @@ router.register("companybank",views.CompanyBankViewset,basename="companybank")
 router.register("medicine",views.MedicineViewSet,basename="medicine")
 router.register("companyaccount",views.CompanyAccountViewset,basename="companyaccount")
 router.register("employee",views.EmployeeViewset,basename="employee")
+router.register("employee_all_bank",views.EmployeeBankViewset,basename="employee_all_bank")
+router.register("employee_all_salary",views.EmployeeSalaryViewset,basename="employee_all_salary")
+
 import os
 
 urlpatterns = [
@@ -36,4 +39,6 @@ urlpatterns = [
     path('api/resfresh_token/',TokenRefreshView.as_view(),name="refresh_token"),
     path('api/companybyname/<str:name>',CompanyNameViewSet.as_view(),name="companybyname"),
     path('api/companyonly/',CompanyOnlyViewSet.as_view(),name="companyonly"),
+    path('api/employee_bankby_id/<str:employee_id>',views.EmployeeBankByEIDViewSet.as_view(),name="employee_bankby_id"),
+    path('api/employee_salaryby_id/<str:employee_id>',views.EmployeeSalaryByEIDViewSet.as_view(),name="employee_salaryby_id"),
 ]
