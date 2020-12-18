@@ -110,6 +110,12 @@ class CompanyNameViewSet(generics.ListAPIView):
         name=self.kwargs["name"]
         return Company.objects.filter(name=name)
 
+class MedicineByNameViewSet(generics.ListAPIView):
+    serializer_class = MedicineSerliazer
+    def get_queryset(self):
+        name=self.kwargs["name"]
+        return Medicine.objects.filter(name__contains=name)
+
 class CompanyOnlyViewSet(generics.ListAPIView):
     serializer_class = CompanySerliazer
     def get_queryset(self):
