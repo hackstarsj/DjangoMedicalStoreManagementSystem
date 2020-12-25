@@ -8,10 +8,11 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 
 
 from DjangoMedicalApp.models import Company, CompanyBank, Medicine, MedicalDetails, CompanyAccount, Employee, \
-    EmployeeBank, EmployeeSalary
+    EmployeeBank, EmployeeSalary, CustomerRequest
 from DjangoMedicalApp.serializers import CompanySerliazer, CompanyBankSerializer, MedicineSerliazer, \
     MedicalDetailsSerializer, MedicalDetailsSerializerSimple, CompanyAccountSerializer, EmployeeSerializer, \
-    EmployeeBankSerializer, EmployeeSalarySerializer, CustomerSerializer, BillSerializer, BillDetailsSerializer
+    EmployeeBankSerializer, EmployeeSalarySerializer, CustomerSerializer, BillSerializer, BillDetailsSerializer, \
+    CustomerRequestSerializer
 
 
 #OLD Viewset
@@ -406,6 +407,48 @@ class GenerateBillViewSet(viewsets.ViewSet):
         dict_response = {"error": False, "message": "Bill Generate Successfully"}
         #except:
             #dict_response = {"error": True, "message": "Error During Generating BIll"}
+        return Response(dict_response)
+
+class CustomerRequestViewset(viewsets.ViewSet):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def list(self,request):
+        customer_request=CustomerRequest.objects.all()
+        serializer=CustomerRequestSerializer(customer_request,many=True,context={"request":request})
+        response_dict={"error":False,"message":"All Customer Request Data","data":serializer.data}
+        return Response(response_dict)
+
+    def create(self,request):
+        try:
+            serializer=CustomerRequestSerializer(data=request.data,context={"request":request})
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            dict_response={"error":False,"message":"Customer Request Data Save Successfully"}
+        except:
+            dict_response={"error":True,"message":"Error During Saving Customer Request Data"}
+        return Response(dict_response)
+
+    def retrieve(self, request, pk=None):
+        queryset = CustomerRequest.objects.all()
+        customer_request = get_object_or_404(queryset, pk=pk)
+        serializer = CustomerRequestSerializer(customer_request, context={"request": request})
+
+        serializer_data = serializer.data
+
+        return Response({"error": False, "message": "Single Data Fetch", "data": serializer_data})
+
+    def update(self,request,pk=None):
+        try:
+            queryset=CustomerRequest.objects.all()
+            customer_request=get_object_or_404(queryset,pk=pk)
+            serializer=CustomerRequestSerializer(customer_request,data=request.data,context={"request":request})
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            dict_response={"error":False,"message":"Successfully Updated Customer Data"}
+        except:
+            dict_response={"error":True,"message":"Error During Updating Customer Data"}
+
         return Response(dict_response)
 
 company_list=CompanyViewSet.as_view({"get":"list"})
