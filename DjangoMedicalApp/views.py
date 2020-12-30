@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 from rest_framework import viewsets, generics
 
 # Create your views here.
@@ -8,7 +10,7 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 
 
 from DjangoMedicalApp.models import Company, CompanyBank, Medicine, MedicalDetails, CompanyAccount, Employee, \
-    EmployeeBank, EmployeeSalary, CustomerRequest
+    EmployeeBank, EmployeeSalary, CustomerRequest, Bill, BillDetails
 from DjangoMedicalApp.serializers import CompanySerliazer, CompanyBankSerializer, MedicineSerliazer, \
     MedicalDetailsSerializer, MedicalDetailsSerializerSimple, CompanyAccountSerializer, EmployeeSerializer, \
     EmployeeBankSerializer, EmployeeSalarySerializer, CustomerSerializer, BillSerializer, BillDetailsSerializer, \
@@ -450,6 +452,64 @@ class CustomerRequestViewset(viewsets.ViewSet):
             dict_response={"error":True,"message":"Error During Updating Customer Data"}
 
         return Response(dict_response)
+
+class HomeApiViewset(viewsets.ViewSet):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def list(self,request):
+        customer_request=CustomerRequest.objects.all()
+        customer_request_serializer=CustomerRequestSerializer(customer_request,many=True,context={"request":request})
+
+
+        bill_count=Bill.objects.all()
+        bill_count_serializer=BillSerializer(bill_count,many=True,context={"request":request})
+
+        medicine_count=Medicine.objects.all()
+        medicine_count_serializer=MedicineSerliazer(medicine_count,many=True,context={"request":request})
+
+        company_count=Company.objects.all()
+        company_count_serializer=CompanySerliazer(company_count,many=True,context={"request":request})
+
+        employee_count=Employee.objects.all()
+        employee_count_serializer=EmployeeSerializer(employee_count,many=True,context={"request":request})
+
+        bill_details=BillDetails.objects.all()
+        profit_amt=0
+        sell_amt=0
+        buy_amt=0
+        for bill in bill_details:
+            buy_amt=buy_amt+float(bill.medicine_id.buy_price)
+            sell_amt=sell_amt+float(bill.medicine_id.sell_price)
+
+        profit_amt=sell_amt-buy_amt
+
+
+        customer_request_pending=CustomerRequest.objects.filter(status=False)
+        customer_request_pending_serializer=CustomerRequestSerializer(customer_request_pending,many=True,context={"request":request})
+
+        customer_request_completed=CustomerRequest.objects.filter(status=True)
+        customer_request_completed_serializer=CustomerRequestSerializer(customer_request_completed,many=True,context={"request":request})
+
+        current_date=datetime.today().strftime("%Y-%m-%d")
+        current_date1=datetime.today()
+        current_date_7days=current_date1+timedelta(days=7)
+        current_date_7days=current_date_7days.strftime("%Y-%m-%d")
+        bill_details_today=BillDetails.objects.filter(added_on__date=current_date)
+        profit_amt_today=0
+        sell_amt_today=0
+        buy_amt_today=0
+        for bill in bill_details_today:
+            buy_amt_today=buy_amt_today+float(bill.medicine_id.buy_price)
+            sell_amt_today=sell_amt_today+float(bill.medicine_id.sell_price)
+
+        profit_amt_today=sell_amt_today-buy_amt_today
+
+
+        medicine_expire=Medicine.objects.filter(expire_date__range=[current_date,current_date_7days])
+        medicine_expire_serializer=MedicineSerliazer(medicine_expire,many=True,context={"request":request})
+        dict_respone={"error":False,"message":"Home Page Data","customer_request":len(customer_request_serializer.data),"bill_count":len(bill_count_serializer.data),"medicine_count":len(medicine_count_serializer.data),"company_count":len(company_count_serializer.data),"employee_count":len(employee_count_serializer.data),"sell_total":sell_amt,"buy_total":buy_amt,"profit_total":profit_amt,"request_pending":len(customer_request_pending_serializer.data),"request_completed":len(customer_request_completed_serializer.data),"profit_amt_today":profit_amt_today,"sell_amt_today":sell_amt_today,"medicine_expire_serializer_data":len(medicine_expire_serializer.data)}
+        return  Response(dict_respone)
 
 company_list=CompanyViewSet.as_view({"get":"list"})
 company_creat=CompanyViewSet.as_view({"post":"create"})
