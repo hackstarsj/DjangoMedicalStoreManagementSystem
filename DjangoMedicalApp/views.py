@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 
+from django.db.models import Sum
 from rest_framework import viewsets, generics
 
 # Create your views here.
@@ -398,6 +399,11 @@ class GenerateBillViewSet(viewsets.ViewSet):
             medicine_detail1["medicine_id"] = medicine_detail["id"]
             medicine_detail1["bill_id"] = bill_id
             medicine_detail1["qty"] = medicine_detail["qty"]
+
+            medicine_deduct=Medicine.objects.get(id=medicine_detail["id"])
+            medicine_deduct.in_stock_total=int(medicine_deduct.in_stock_total)-int(medicine_detail['qty'])
+            medicine_deduct.save()
+
             medicine_details_list.append(medicine_detail1)
             #print(medicine_detail)
 
@@ -479,8 +485,8 @@ class HomeApiViewset(viewsets.ViewSet):
         sell_amt=0
         buy_amt=0
         for bill in bill_details:
-            buy_amt=buy_amt+float(bill.medicine_id.buy_price)
-            sell_amt=sell_amt+float(bill.medicine_id.sell_price)
+            buy_amt=float(buy_amt+float(bill.medicine_id.buy_price))*int(bill.qty)
+            sell_amt=float(sell_amt+float(bill.medicine_id.sell_price))*int(bill.qty)
 
         profit_amt=sell_amt-buy_amt
 
@@ -500,14 +506,16 @@ class HomeApiViewset(viewsets.ViewSet):
         sell_amt_today=0
         buy_amt_today=0
         for bill in bill_details_today:
-            buy_amt_today=buy_amt_today+float(bill.medicine_id.buy_price)
-            sell_amt_today=sell_amt_today+float(bill.medicine_id.sell_price)
+            buy_amt_today=float(buy_amt_today+float(bill.medicine_id.buy_price))*int(bill.qty)
+            sell_amt_today=float(sell_amt_today+float(bill.medicine_id.sell_price))*int(bill.qty)
+
 
         profit_amt_today=sell_amt_today-buy_amt_today
 
 
         medicine_expire=Medicine.objects.filter(expire_date__range=[current_date,current_date_7days])
         medicine_expire_serializer=MedicineSerliazer(medicine_expire,many=True,context={"request":request})
+
         dict_respone={"error":False,"message":"Home Page Data","customer_request":len(customer_request_serializer.data),"bill_count":len(bill_count_serializer.data),"medicine_count":len(medicine_count_serializer.data),"company_count":len(company_count_serializer.data),"employee_count":len(employee_count_serializer.data),"sell_total":sell_amt,"buy_total":buy_amt,"profit_total":profit_amt,"request_pending":len(customer_request_pending_serializer.data),"request_completed":len(customer_request_completed_serializer.data),"profit_amt_today":profit_amt_today,"sell_amt_today":sell_amt_today,"medicine_expire_serializer_data":len(medicine_expire_serializer.data)}
         return  Response(dict_respone)
 
