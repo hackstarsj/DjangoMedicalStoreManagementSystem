@@ -516,7 +516,29 @@ class HomeApiViewset(viewsets.ViewSet):
         medicine_expire=Medicine.objects.filter(expire_date__range=[current_date,current_date_7days])
         medicine_expire_serializer=MedicineSerliazer(medicine_expire,many=True,context={"request":request})
 
-        dict_respone={"error":False,"message":"Home Page Data","customer_request":len(customer_request_serializer.data),"bill_count":len(bill_count_serializer.data),"medicine_count":len(medicine_count_serializer.data),"company_count":len(company_count_serializer.data),"employee_count":len(employee_count_serializer.data),"sell_total":sell_amt,"buy_total":buy_amt,"profit_total":profit_amt,"request_pending":len(customer_request_pending_serializer.data),"request_completed":len(customer_request_completed_serializer.data),"profit_amt_today":profit_amt_today,"sell_amt_today":sell_amt_today,"medicine_expire_serializer_data":len(medicine_expire_serializer.data)}
+        bill_dates=BillDetails.objects.order_by().values("added_on__date").distinct()
+        profit_chart_list=[]
+        sell_chart_list=[]
+        buy_chart_list=[]
+        for billdate in bill_dates:
+            access_date=billdate["added_on__date"]
+
+            bill_data=BillDetails.objects.filter(added_on__date=access_date)
+            profit_amt_inner=0
+            sell_amt_inner=0
+            buy_amt_inner=0
+
+            for billsingle in bill_data:
+                buy_amt_inner = float(buy_amt_inner + float(billsingle.medicine_id.buy_price)) * int(billsingle.qty)
+                sell_amt_inner = float(sell_amt_inner + float(billsingle.medicine_id.sell_price)) * int(billsingle.qty)
+
+            profit_amt_inner = sell_amt_inner - buy_amt_inner
+
+            profit_chart_list.append({"date":access_date,"amt":profit_amt_inner})
+            sell_chart_list.append({"date":access_date,"amt":sell_amt_inner})
+            buy_chart_list.append({"date":access_date,"amt":buy_amt_inner})
+
+        dict_respone={"error":False,"message":"Home Page Data","customer_request":len(customer_request_serializer.data),"bill_count":len(bill_count_serializer.data),"medicine_count":len(medicine_count_serializer.data),"company_count":len(company_count_serializer.data),"employee_count":len(employee_count_serializer.data),"sell_total":sell_amt,"buy_total":buy_amt,"profit_total":profit_amt,"request_pending":len(customer_request_pending_serializer.data),"request_completed":len(customer_request_completed_serializer.data),"profit_amt_today":profit_amt_today,"sell_amt_today":sell_amt_today,"medicine_expire_serializer_data":len(medicine_expire_serializer.data),"sell_chart":sell_chart_list,"buy_chart":buy_chart_list,"profit_chart":profit_chart_list}
         return  Response(dict_respone)
 
 company_list=CompanyViewSet.as_view({"get":"list"})
