@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: djangorestframework-stubs
+Version: 1.2.0
+Summary: PEP-484 stubs for django-rest-framework
+Home-page: https://github.com/typeddjango/djangorestframework-stubs
+Author: Maksim Kurnikov
+Author-email: maxim.kurnikov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: mypy (>=0.750)
+Requires-Dist: django-stubs (>=1.3.0)
+Requires-Dist: typing-extensions
+
+<img src="http://mypy-lang.org/static/mypy_light.svg" alt="mypy logo" width="300px"/>
+
+# pep484 stubs for Django REST framework
+
+[![Build Status](https://travis-ci.com/typeddjango/djangorestframework-stubs.svg?branch=master)](https://travis-ci.com/typeddjango/djangorestframework-stubs)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Gitter](https://badges.gitter.im/mypy-django/Lobby.svg)](https://gitter.im/mypy-django/Lobby)
+
+
+Mypy stubs for [DRF 3.9.x](https://pypi.org/project/djangorestframework/). 
+Supports Python 3.6 and 3.7.
+
+## Installation
+
+```bash
+pip install djangorestframework-stubs
+```
+
+To make mypy aware of the plugin, you need to add
+
+```ini
+[mypy]
+plugins =
+    mypy_drf_plugin.main
+```
+
+in your `mypy.ini` file.
+
+
+## To get help
+
+We have Gitter here: <https://gitter.im/mypy-django/Lobby>
+
+If you think you have more generic typing issue, please refer to <https://github.com/python/mypy> and their Gitter.
+
+

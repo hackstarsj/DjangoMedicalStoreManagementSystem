@@ -464,6 +464,7 @@ class HomeApiViewset(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
 
     def list(self,request):
+
         customer_request=CustomerRequest.objects.all()
         customer_request_serializer=CustomerRequestSerializer(customer_request,many=True,context={"request":request})
 

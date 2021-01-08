@@ -1,0 +1,2 @@
+mypy_drf_plugin
+rest_framework-stubs

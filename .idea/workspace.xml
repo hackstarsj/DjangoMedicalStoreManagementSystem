@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b492eff-a582-446c-96e6-9dc43cca68e1" name="Default" comment="Added Chart API in Home">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoMedicalApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoMedicalApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/settings.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="144" column="34" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runtime.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1581">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_object</find>
+      <find>list</find>
+      <find>BillDetails</find>
+      <find>employee</find>
+      <find>bill</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DjangoMedicalApp/admin.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/37586ce0-17cc-4813-b4fa-1d888c84b784/console.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/DjangoMedicalApp/serializers.py" />
+        <option value="$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/urls.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/DjangoMedicalApp/models.py" />
+        <option value="$PROJECT_DIR$/DjangoMedicalApp/views.py" />
+        <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="width" value="1760" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DjangoMedicalStoreManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoMedicalStoreManagementSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DjangoMedicalStoreManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoMedicalStoreManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoMedicalStoreManagementSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="D:/Downloads/old/StudentManagementClient/StudentManagementClient" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sanjeev\PycharmProjects\DjangoMedicalStoreManagementSystem\screenshots" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DjangoMedicalStoreManagementSystem" type="Python.DjangoServer" factoryName="Django server">
+      <module name="DjangoMedicalStoreManagementSystem" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="DjangoMedicalStoreManagementSystem.settings" />
+      </envs>
+      <option name="SDK_HOME" value="D:\PycharmProjects\DjangoMedicalStoreManagementSystem\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b492eff-a582-446c-96e6-9dc43cca68e1" name="Default" comment="" />
+      <created>1594544051849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594544051849</updated>
+      <workItem from="1595584603867" duration="545000" />
+      <workItem from="1595585220937" duration="4997000" />
+      <workItem from="1595704527076" duration="14196000" />
+      <workItem from="1596620609677" duration="641000" />
+      <workItem from="1597002045245" duration="5391000" />
+      <workItem from="1597308206952" duration="2898000" />
+      <workItem from="1598113435108" duration="5204000" />
+      <workItem from="1599026084889" duration="12100000" />
+      <workItem from="1599459178609" duration="8691000" />
+      <workItem from="1599721660422" duration="147000" />
+      <workItem from="1599721842941" duration="1675000" />
+      <workItem from="1599788649384" duration="1887000" />
+      <workItem from="1600061390596" duration="7786000" />
+      <workItem from="1600170910122" duration="1882000" />
+      <workItem from="1600428111438" duration="8027000" />
+      <workItem from="1600773077860" duration="54000" />
+      <workItem from="1600773150459" duration="54000" />
+      <workItem from="1600773219905" duration="286000" />
+      <workItem from="1600773524801" duration="9702000" />
+      <workItem from="1600866568317" duration="219000" />
+      <workItem from="1600866803185" duration="52000" />
+      <workItem from="1601220805019" duration="11133000" />
+      <workItem from="1601704616558" duration="7988000" />
+      <workItem from="1601894528249" duration="1583000" />
+      <workItem from="1602313108325" duration="640000" />
+      <workItem from="1602829138089" duration="2010000" />
+      <workItem from="1608268477031" duration="3577000" />
+      <workItem from="1608446793582" duration="5267000" />
+      <workItem from="1608794099451" duration="4030000" />
+      <workItem from="1609137254375" duration="24331000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added ER Diagram and Database Models in models.py">
+      <created>1594547446120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594547446121</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added ER Diagram and Database Models in models.py">
+      <created>1594547525786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594547525786</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added ER Diagram and Database Models in models.py">
+      <created>1594547718113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594547718113</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added ER Diagram and Database Models in models.py">
+      <created>1594547782047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594547782047</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added ER Diagram and Database Models in models.py">
+      <created>1594553569433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594553569433</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Serializer and Modelviewset of Company">
+      <created>1594710911123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594710911123</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Authorization for API END Point and Custom END Point for Company API With Custom Response">
+      <created>1594818834725</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594818834725</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added Authorization for API END Point and Custom END Point for Company API With Custom Response">
+      <created>1594986310027</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594986310027</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Authorization for API END Point and Custom END Point for Company API With Custom Response">
+      <created>1594986380174</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594986380174</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added Relational Data Example for CompanyBank Viewset and How to Acccess Model by Filter">
+      <created>1595170579644</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595170579644</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added All Serializers of Model and Medicine Viewset">
+      <created>1595612138043</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595612138043</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added How to Save Multiple Serializer Model in ViewSet and How to Access Multiple Model Serializer Data From ViewSet Added Medicine Details">
+      <created>1595782656581</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1595782656581</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added How to Save Multiple Serializer Model in ViewSet and How to Access Multiple Model Serializer Data From ViewSet Added Medicine Details">
+      <created>1597308311052</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597308311052</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added Retrieve Method in views.py">
+      <created>1599561119190</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599561119190</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added Company Only API">
+      <created>1600109718630</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1600109718630</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated Database">
+      <created>1600516629051</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1600516629052</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added Medicine Salt Details Update Method">
+      <created>1600666744114</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600666744114</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added Medicine Company Account Viewset">
+      <created>1600843923794</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1600843923794</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Employee Viewset">
+      <created>1601309875363</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1601309875363</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added Employee Bank and Salary Viewset">
+      <created>1601903734033</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1601903734034</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Medicine API filter By Name">
+      <created>1608303632295</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1608303632296</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added Homepage API">
+      <created>1609319091197</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609319091197</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed Changes">
+      <created>1609400633873</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609400633873</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added Chart API in Home">
+      <created>1609671802030</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1609671802030</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="146993000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19865772" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.32763532" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.3295583" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="manage.py@DjangoMedicalStoreManagementSystem" order="10" weight="0.3295583" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32763532" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Packages" order="3" weight="0.32975295" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.22214764" />
+      <window_info anchor="right" id="SciView" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added ER Diagram and Database Models in models.py" />
+    <MESSAGE value="Added Serializer and Modelviewset of Company" />
+    <MESSAGE value="Added Authorization for API END Point and Custom END Point for Company API With Custom Response" />
+    <MESSAGE value="Added Relational Data Example for CompanyBank Viewset and How to Acccess Model by Filter" />
+    <MESSAGE value="Added All Serializers of Model and Medicine Viewset" />
+    <MESSAGE value="Added How to Save Multiple Serializer Model in ViewSet and How to Access Multiple Model Serializer Data From ViewSet Added Medicine Details" />
+    <MESSAGE value="Added Retrieve Method in views.py" />
+    <MESSAGE value="Added Company Only API" />
+    <MESSAGE value="Updated Database" />
+    <MESSAGE value="Added Medicine Salt Details Update Method" />
+    <MESSAGE value="Added Medicine Company Account Viewset" />
+    <MESSAGE value="Added Employee Viewset" />
+    <MESSAGE value="Added Employee Bank and Salary Viewset" />
+    <MESSAGE value="Added Medicine API filter By Name" />
+    <MESSAGE value="Added Homepage API" />
+    <MESSAGE value="Fixed Changes" />
+    <MESSAGE value="Added Chart API in Home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Chart API in Home" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/enums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCHEMA">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.png" />
+    <entry file="file://$PROJECT_DIR$/ER_DIAGRAM.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMedicalApp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/141e20fa/37586ce0-17cc-4813-b4fa-1d888c84b784/main.authtoken_token" />
+    <entry file="das://table:/141e20fa/37586ce0-17cc-4813-b4fa-1d888c84b784/main.auth_user" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="1600" column="6" selection-start-line="1600" selection-start-column="6" selection-end-line="1600" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/141e20fa/37586ce0-17cc-4813-b4fa-1d888c84b784/main.DjangoMedicalApp_companybank" />
+    <entry file="das://table:/141e20fa/37586ce0-17cc-4813-b4fa-1d888c84b784/main.DjangoMedicalApp_companyaccount" />
+    <entry file="das://table:/141e20fa/37586ce0-17cc-4813-b4fa-1d888c84b784/main.DjangoMedicalApp_company" />
+    <entry file="das://table:/141e20fa/37586ce0-17cc-4813-b4fa-1d888c84b784/main.DjangoMedicalApp_companybank" />
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/auth_group_permissions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/authtoken_token">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_employeebank">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_employee">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_companybank">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_companyaccount">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/37586ce0-17cc-4813-b4fa-1d888c84b784/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="437" selection-start-column="437" selection-end-column="437" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/shortcuts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/37586ce0-17cc-4813-b4fa-1d888c84b784.SCHEMA:main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>37586ce0-17cc-4813-b4fa-1d888c84b784.SCHEMA:main</OriginalElement>
+          <nodes>
+            <node x="255.0625" y="1067.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user</node>
+            <node x="699.75" y="712.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_billdetails</node>
+            <node x="1220.475" y="1133.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_employeebank</node>
+            <node x="505.75" y="356.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_companyaccount</node>
+            <node x="595.5" y="1455.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user_groups</node>
+            <node x="765.475" y="1455.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_group_permissions</node>
+            <node x="1484.475" y="920.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_customerrequest</node>
+            <node x="61.75" y="257.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_medicine</node>
+            <node x="498.9375" y="1144.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_permission</node>
+            <node x="283.75" y="0.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_company</node>
+            <node x="0.0" y="1652.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.sqlite_master</node>
+            <node x="587.0" y="1652.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.sqlite_sequence</node>
+            <node x="0.0" y="1400.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_admin_log</node>
+            <node x="389.0" y="1455.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user_user_permissions</node>
+            <node x="1112.975" y="920.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_employee</node>
+            <node x="365.0" y="1652.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_session</node>
+            <node x="749.25" y="33.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_customer</node>
+            <node x="226.0" y="1455.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.authtoken_token</node>
+            <node x="714.75" y="1166.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_group</node>
+            <node x="0.0" y="690.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_medicaldetails</node>
+            <node x="170.0" y="1652.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_migrations</node>
+            <node x="756.75" y="400.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_bill</node>
+            <node x="270.75" y="378.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_companybank</node>
+            <node x="222.625" y="920.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_content_type</node>
+            <node x="977.4749999999999" y="1133.0">37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_employeesalary</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_medicaldetails" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_medicine">
+              <point x="0.0" y="-92.5" />
+              <point x="-47.25" y="191.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user_user_permissions" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user">
+              <point x="-43.75" y="-48.5" />
+              <point x="432.75" y="1380.0" />
+              <point x="364.4375" y="1380.0" />
+              <point x="21.875" y="136.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_companyaccount" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_company">
+              <point x="0.0" y="-92.5" />
+              <point x="621.25" y="232.0" />
+              <point x="441.25" y="232.0" />
+              <point x="63.0" y="103.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user_groups" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_group">
+              <point x="34.75" y="-48.5" />
+              <point x="699.75" y="1380.0" />
+              <point x="752.25" y="1380.0" />
+              <point x="-37.5" y="37.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_admin_log" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user">
+              <point x="51.5" y="-103.5" />
+              <point x="154.5" y="1380.0" />
+              <point x="276.9375" y="1380.0" />
+              <point x="-65.625" y="136.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_employeebank" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_employee">
+              <point x="0.0" y="-70.5" />
+              <point x="1329.975" y="1108.0" />
+              <point x="1257.725" y="1108.0" />
+              <point x="48.25" y="81.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_employeesalary" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_employee">
+              <point x="0.0" y="-70.5" />
+              <point x="1088.975" y="1108.0" />
+              <point x="1161.225" y="1108.0" />
+              <point x="-48.25" y="81.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_bill" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_customer">
+              <point x="0.0" y="-48.5" />
+              <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.authtoken_token" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user">
+              <point x="0.0" y="-48.5" />
+              <point x="297.5" y="1380.0" />
+              <point x="320.6875" y="1380.0" />
+              <point x="-21.875" y="136.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_companybank" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_company">
+              <point x="0.0" y="-70.5" />
+              <point x="0.0" y="103.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_billdetails" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_bill">
+              <point x="48.0" y="-70.5" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user_groups" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user">
+              <point x="-34.75" y="-48.5" />
+              <point x="630.25" y="1370.0" />
+              <point x="408.1875" y="1370.0" />
+              <point x="65.625" y="136.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_permission" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_content_type">
+              <point x="0.0" y="-59.5" />
+              <point x="587.9375" y="1042.0" />
+              <point x="350.875" y="1042.0" />
+              <point x="42.75" y="48.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_user_user_permissions" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_permission">
+              <point x="43.75" y="-48.5" />
+              <point x="520.25" y="1380.0" />
+              <point x="543.4375" y="1380.0" />
+              <point x="-44.5" y="59.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_billdetails" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_medicine">
+              <point x="-48.0" y="-70.5" />
+              <point x="747.75" y="665.0" />
+              <point x="203.5" y="665.0" />
+              <point x="47.25" y="191.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_medicine" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_company">
+              <point x="0.0" y="-191.5" />
+              <point x="156.25" y="232.0" />
+              <point x="315.25" y="232.0" />
+              <point x="-63.0" y="103.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_group_permissions" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_permission">
+              <point x="-41.75" y="-48.5" />
+              <point x="807.225" y="1360.0" />
+              <point x="632.4375" y="1360.0" />
+              <point x="44.5" y="59.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_admin_log" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.django_content_type">
+              <point x="-51.5" y="-103.5" />
+              <point x="51.5" y="1042.0" />
+              <point x="265.375" y="1042.0" />
+              <point x="-42.75" y="48.5" />
+            </edge>
+            <edge source="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_group_permissions" target="37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.auth_group">
+              <point x="41.75" y="-48.5" />
+              <point x="890.725" y="1380.0" />
+              <point x="827.25" y="1380.0" />
+              <point x="37.5" y="37.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7317880794701986" x="80.0" y="470.0" />
+          <SelectedNodes>
+            <node>37586ce0-17cc-4813-b4fa-1d888c84b784.TABLE:main.DjangoMedicalApp_companyaccount</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_employeesalary">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_company">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="120" column="16" lean-forward="true" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework_simplejwt/authentication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_bill">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_customerrequest">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMedicalApp/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="e#658#690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_medicaldetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_billdetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://37586ce0-17cc-4813-b4fa-1d888c84b784/schema/main/table/DjangoMedicalApp_medicine">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMedicalApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="470" lean-forward="true" selection-start-line="470" selection-end-line="470" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMedicalApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="79" column="12" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="144" column="34" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

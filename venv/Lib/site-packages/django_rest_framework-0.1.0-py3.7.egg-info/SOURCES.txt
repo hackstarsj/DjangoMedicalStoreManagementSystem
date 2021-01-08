@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+django_rest_framework.egg-info/PKG-INFO
+django_rest_framework.egg-info/SOURCES.txt
+django_rest_framework.egg-info/dependency_links.txt
+django_rest_framework.egg-info/not-zip-safe
+django_rest_framework.egg-info/requires.txt
+django_rest_framework.egg-info/top_level.txt
+empty/__init__.py

@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: django-rest-jwt
+Version: 0.1.46
+Summary: simple JWT handling for django REST Framework
+Home-page: https://github.com/Pythux/drf-jwt
+Author: Pythux
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyJWT (<2.0.0,>=1.5.2)
+
+# drf-jwt
+JSON Web Token based authentication using Django REST Framework,
+the JWT `encoded in base64` is put in the headers:
+
+> `Authorization: Bearer <token>`
+
+
+### install:
+
+pip install django-rest-jwt
+
+
+### let JWT do the authentification:
+
+add 'drf_jwt.authentication.JSONWebTokenAuthentication' in authentication classes:
+```python
+'DEFAULT_AUTHENTICATION_CLASSES': [
+    'drf_jwt.authentication.JSONWebTokenAuthentication',
+]
+```
+
+### make endpoints to login and get the JWT:
+```python
+from drf_jwt.controllers import Auth
+
+urlpatterns = [
+    path('api/login', Auth.as_view()),
+]
+```
+
+#### suport GET and POST
+
+##### POST:
+
+> { login, password }
+
+login will be the username of the `authenticate` function of django
+
+
+##### GET:
+
+return a JWT token if you are authenticate
+
+so, one could do a Basic Authentication to the GET endpoints to receve a JWT
+
+

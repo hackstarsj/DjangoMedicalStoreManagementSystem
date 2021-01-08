@@ -25,7 +25,7 @@ SECRET_KEY = '3zue&@nv@q_*70)!#ntcfxn8k(k8xa#o-q+jzk$l&+xj%)(51r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 REST_FRAMEWORK={
@@ -140,3 +140,6 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
 ]
+import dj_database_url
+prod_db=dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)

@@ -1,0 +1,5 @@
+html5lib>=1.0
+pyPdf2
+Pillow
+reportlab>=3.0
+six
