@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="157">
-              <caret line="140" column="166" lean-forward="true" selection-start-line="140" selection-start-column="166" selection-end-line="140" selection-end-column="166" />
+              <caret line="140" column="27" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -253,7 +253,7 @@
       <workItem from="1608268477031" duration="3577000" />
       <workItem from="1608446793582" duration="5267000" />
       <workItem from="1608794099451" duration="4030000" />
-      <workItem from="1609137254375" duration="26659000" />
+      <workItem from="1609137254375" duration="27590000" />
     </task>
     <task id="LOCAL-00001" summary="Added ER Diagram and Database Models in models.py">
       <created>1594547446120</created>
@@ -427,7 +427,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149321000" />
+    <option name="totallyTimeSpent" value="150252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -447,7 +447,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="manage.py@DjangoMedicalStoreManagementSystem" order="10" weight="0.3295583" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26068377" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4045584" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3286119" />
@@ -875,7 +875,7 @@
     <entry file="file://$PROJECT_DIR$/DjangoMedicalStoreManagementSystem/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
-          <caret line="140" column="166" lean-forward="true" selection-start-line="140" selection-start-column="166" selection-end-line="140" selection-end-column="166" />
+          <caret line="140" column="27" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
         </state>
       </provider>
     </entry>
