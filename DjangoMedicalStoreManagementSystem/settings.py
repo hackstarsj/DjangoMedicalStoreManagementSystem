@@ -138,7 +138,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
+    "http://localhost:3000","https://pacific-falls-18076.herokuapp.com/","http://pacific-falls-18076.herokuapp.com/","https://pacific-falls-18076.herokuapp.com","http://pacific-falls-18076.herokuapp.com"
 ]
 import dj_database_url
 prod_db=dj_database_url.config(conn_max_age=500)
