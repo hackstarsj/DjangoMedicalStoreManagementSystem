@@ -87,6 +87,7 @@ class CustomerRequest(models.Model):
     medicine_details=models.CharField(max_length=255)
     status=models.BooleanField(default=False)
     added_on=models.DateTimeField(auto_now_add=True)
+    prescription=models.FileField(default="")
     objects=models.Manager()
 
 class CompanyAccount(models.Model):

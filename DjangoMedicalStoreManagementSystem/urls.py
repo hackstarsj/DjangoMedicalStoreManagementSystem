@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
@@ -20,6 +21,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from DjangoMedicalApp import views
 from DjangoMedicalApp.views import CompanyNameViewSet, CompanyOnlyViewSet,MedicineByNameViewSet
+from DjangoMedicalStoreManagementSystem import settings
 
 router=routers.DefaultRouter()
 router.register("company",views.CompanyViewSet,basename="company")
@@ -45,4 +47,4 @@ urlpatterns = [
     path('api/companyonly/',CompanyOnlyViewSet.as_view(),name="companyonly"),
     path('api/employee_bankby_id/<str:employee_id>',views.EmployeeBankByEIDViewSet.as_view(),name="employee_bankby_id"),
     path('api/employee_salaryby_id/<str:employee_id>',views.EmployeeSalaryByEIDViewSet.as_view(),name="employee_salaryby_id"),
-]
+]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
