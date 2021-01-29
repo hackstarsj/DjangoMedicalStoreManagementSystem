@@ -7,7 +7,7 @@ cffi==1.14.1
 channels==2.4.0
 colorama==0.4.3
 constantly==15.1.0
-cryptography==3.0
+cryptography==3.2
 daphne==2.5.0
 dj-database-url==0.5.0
 Django==3.0.8
