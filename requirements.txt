@@ -1,7 +1,7 @@
 asgiref==3.2.10
 astroid==2.4.2
 attrs==19.3.0
-autobahn==20.7.1
+autobahn==20.12.3
 Automat==20.2.0
 cffi==1.14.1
 channels==2.4.0
