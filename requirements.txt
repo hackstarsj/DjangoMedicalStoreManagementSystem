@@ -10,7 +10,7 @@ constantly==15.1.0
 cryptography==3.0
 daphne==2.5.0
 dj-database-url==0.5.0
-Django==3.0.8
+Django==3.1.13
 django-cors-headers==3.4.0
 django-rest-framework==0.1.0
 django-rest-jwt==0.1.46
