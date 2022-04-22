@@ -34,7 +34,7 @@ PyHamcrest==2.0.2
 PyJWT==1.7.1
 pylint==2.5.3
 pyOpenSSL==19.1.0
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 pytz==2020.1
 reportlab==3.5.47
 service-identity==18.1.0
